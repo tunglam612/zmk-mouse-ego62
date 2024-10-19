@@ -67,6 +67,16 @@
 &none         &none         &none                   &none               &none                &none         &none  &none  &none  &none         &none       &none         &none  &none
             >;
         };
+
+        mouse {
+            bindings = <
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1            &bt BT_SEL 2        &bt BT_SEL 3         &bt BT_SEL 4                &none             &none               &none           &none               &none  &none
+&out OUT_TOG  &none         &none                   &none               &none                &none                       &msc SCROLL_UP    &msc SCROLL_LEFT    &mmv MOVE_UP    &msc SCROLL_RIGHT   &none  &none
+&none         &none         &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                       &msc SCROLL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none  &none
+&none         &none         &none                   &none               &none                &none                       &none             &none               &none           &none               &none  &none
+&none         &none         &none                   &none               &none                &none         &none  &none  &none             &none               &none           &none               &none  &none
+            >;
+        };
     };
 
     conditional_layers {
