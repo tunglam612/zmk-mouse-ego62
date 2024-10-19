@@ -41,7 +41,7 @@
         lower {
             bindings = <
 &kp LC(GRAVE)  &kp F1    &kp F2    &kp F3    &kp F4    &none                                     &trans        &kp N7  &kp N8     &kp N9           &kp BSPC    &kp ESC
-&kp TAB        &kp F5    &kp F6    &kp F7    &kp F8    &none                                     &kp C_VOL_UP  &kp N4  &kp N5     &kp N6           &kp ENTER   &kp F13
+&kp TAB        &kp F5    &kp F6    &kp F7    &kp F8    &mo 5                                     &kp C_VOL_UP  &kp N4  &kp N5     &kp N6           &kp ENTER   &kp F13
 &kp LSHFT      &kp F9    &kp F10   &kp F11   &kp F12   &kp ENTER                                 &kp C_VOL_DN  &kp N1  &kp N2     &kp N3           &none       &kp F14
 &kp LCTRL      &kp LALT  &kp LGUI  &mkp MB2  &mkp MB1  &mkp MB3                                  &kp C_MUTE    &kp N0  &kp COMMA  &kp DOT          &kp C_PP    &kp F15
 &mkp MB4       &mkp MB5  &none     &none     &mo 2     &none      &kp LC(BACKSPACE)  &kp INSERT  &none         &mo 3   &kp SPACE  &kp RIGHT_SHIFT  &kp C_PREV  &kp C_NEXT
@@ -50,11 +50,11 @@
 
         raise {
             bindings = <
-&kp GRAVE  &trans  &trans           &trans          &trans           &trans                            &kp F6         &kp F7             &kp F8          &kp F9           &kp F10        &kp F11
-&trans     &trans  &trans           &mmv MOVE_UP    &trans           &trans                            &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &trans         &kp F12
-&trans     &trans  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                            &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 2          &kp ENTER
-&trans     &trans  &trans           &trans          &trans           &trans                            &kp LC(LS(N))  &kp K_APPLICATION  &kp LC(LEFT)    &kp LC(RIGHT)    &kp BACKSLASH  &kp RSHFT
-&trans     &trans  &trans           &trans          &mo 2            &trans  &none  &kp LC(BACKSPACE)  &mkp MB2       &mo 3              &mkp MB1        &trans           &kp RGUI       &kp ESC
+&kp GRAVE  &trans  &trans          &trans          &trans           &trans                &kp F6         &kp F7             &kp F8          &kp F9           &kp F10        &kp F11
+&trans     &trans  &trans          &mmv MOVE_UP    &trans           &trans                &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &trans         &kp F12
+&trans     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 2          &kp ENTER
+&trans     &trans  &trans          &trans          &trans           &trans                &kp LC(LS(N))  &kp K_APPLICATION  &kp LC(LEFT)    &kp LC(RIGHT)    &kp BACKSLASH  &kp RSHFT
+&trans     &trans  &trans          &trans          &mo 2            &trans  &none  &none  &none          &mo 3              &mo 5           &trans           &kp RGUI       &kp ESC
             >;
         };
 
@@ -70,11 +70,11 @@
 
         mouse {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1            &bt BT_SEL 2        &bt BT_SEL 3         &bt BT_SEL 4                &none             &none               &none           &none               &none  &none
-&out OUT_TOG  &none         &none                   &none               &none                &none                       &msc SCROLL_UP    &msc SCROLL_LEFT    &mmv MOVE_UP    &msc SCROLL_RIGHT   &none  &none
-&none         &none         &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                       &msc SCROLL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none  &none
-&none         &none         &none                   &none               &none                &none                       &none             &none               &none           &none               &none  &none
-&none         &none         &none                   &none               &none                &none         &none  &none  &none             &none               &none           &none               &none  &none
+&none  &none  &none                   &none               &none                &none                &none             &none             &none           &none              &none     &none
+&none  &none  &none                   &none               &none                &none                &msc SCROLL_UP    &msc SCROLL_LEFT  &mmv MOVE_UP    &msc SCROLL_RIGHT  &none     &none
+&none  &none  &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                &msc SCROLL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &none     &none
+&none  &none  &none                   &none               &none                &none                &none             &mkp MB1          &mkp MB3        &mkp MB2           &none     &none
+&none  &none  &none                   &none               &none                &none  &none  &none  &none             &none             &none           &none              &mkp MB4  &mkp MB5
             >;
         };
     };
