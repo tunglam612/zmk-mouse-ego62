@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &msc {
-  time-to-max-speed-ms = <800>;                 /* <--- How long time until max speed is reached */
+  time-to-max-speed-ms = <1500>;                 /* <--- How long time until max speed is reached */
   acceleration-exponent = <1>;
 };
 
@@ -76,8 +76,8 @@
         mouse {
             bindings = <
 &none  &none  &none                   &none               &none                &none                &none           &none             &none           &none              &none     &none
-&none  &none  &none                   &none               &none                &none                &msc MOVE_DOWN  &msc MOVE_LEFT    &mmv MOVE_UP    &msc MOVE_RIGHT    &none     &none
-&none  &none  &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                &msc MOVE_UP    &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &none     &none
+&none  &none  &none                   &none               &none                &none                &msc SCRL_UP    &msc SCRL_LEFT    &mmv MOVE_UP    &msc SCRL_RIGHT    &none     &none
+&none  &none  &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &none     &none
 &none  &none  &kp C_PREV              &kp C_PP            &kp C_NEXT           &none                &none           &mkp MB1          &mkp MB3        &mkp MB2           &none     &none
 &none  &none  &none                   &mkp MB1            &mkp MB2             &none  &none  &none  &none           &none             &none           &none              &mkp MB4  &mkp MB5
             >;
