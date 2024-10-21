@@ -41,9 +41,9 @@
         lower {
             bindings = <
 &kp LC(GRAVE)  &kp F1    &kp F2    &kp F3    &kp F4    &none                                     &trans        &kp N7  &kp N8     &kp N9           &kp BSPC    &kp ESC
-&kp TAB        &kp F5    &kp F6    &kp F7    &kp F8    &mo 5                                     &kp C_VOL_UP  &kp N4  &kp N5     &kp N6           &kp ENTER   &kp F13
+&kp TAB        &kp F5    &kp F6    &kp F7    &kp F8    &none                                     &kp C_VOL_UP  &kp N4  &kp N5     &kp N6           &kp ENTER   &kp F13
 &kp LSHFT      &kp F9    &kp F10   &kp F11   &kp F12   &kp ENTER                                 &kp C_VOL_DN  &kp N1  &kp N2     &kp N3           &none       &kp F14
-&kp LCTRL      &kp LALT  &kp LGUI  &mkp MB2  &mkp MB1  &mkp MB3                                  &kp C_MUTE    &kp N0  &kp COMMA  &kp DOT          &kp C_PP    &kp F15
+&kp LCTRL      &kp LALT  &mkp MB2  &mkp MB3  &mkp MB1  &mo 5                                     &kp C_MUTE    &kp N0  &kp COMMA  &kp DOT          &kp C_PP    &kp F15
 &mkp MB4       &mkp MB5  &none     &none     &mo 2     &none      &kp LC(BACKSPACE)  &kp INSERT  &none         &mo 3   &kp SPACE  &kp RIGHT_SHIFT  &kp C_PREV  &kp C_NEXT
             >;
         };
@@ -70,11 +70,11 @@
 
         mouse {
             bindings = <
-&none  &none  &none                   &none               &none                &none                &none           &none             &none           &none              &none     &none
-&none  &none  &none                   &none               &none                &none                &msc SCRL_UP    &msc SCRL_LEFT    &mmv MOVE_UP    &msc SCRL_RIGHT    &none     &none
-&none  &none  &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &none     &none
-&none  &none  &kp C_PREV              &kp C_PP            &kp C_NEXT           &none                &none           &mkp MB1          &mkp MB3        &mkp MB2           &none     &none
-&none  &none  &none                   &mkp MB1            &mkp MB2             &none  &none  &none  &none           &none             &none           &none              &mkp MB4  &mkp MB5
+&none  &none  &none                   &none               &none                &none                &none           &none           &none           &none            &none     &none
+&none  &none  &none                   &none               &none                &none                &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none     &none
+&none  &none  &kp LG(LS(LEFT_ARROW))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none                &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none
+&none  &none  &kp C_PREV              &kp C_PP            &kp C_NEXT           &none                &none           &mkp MB1        &mkp MB3        &mkp MB2         &none     &none
+&none  &none  &none                   &mkp MB1            &mkp MB2             &none  &none  &none  &none           &none           &none           &none            &mkp MB4  &mkp MB5
             >;
         };
     };
